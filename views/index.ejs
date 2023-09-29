@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css"> <!-- Link para o arquivo CSS na pasta "public" -->
+  <script src="/script.js"></script> <!-- Link para o arquivo JavaScript na pasta "public" -->
+</head>
+<body>
+  <h1><%= message %></h1>
+  <form action="/download" method="GET">
+    <div class="input-group">
+      <input type="text" name="url" placeholder="Enter YouTube URL" required>
+      <i class="fas fa-paste" onclick="pasteFromClipboard()"></i>
+    </div>
+
+    <!-- Adicione o menu suspenso de qualidade do vídeo -->
+    <select name="quality">
+      <option value="137">Full HD (1080p)</option>
+      <option value="136">HD (720p)</option>
+      <option value="135">Worst Quality (480)</option>
+      <option value="134">Lowest Quality (360)</option>
+    </select>
+
+    <button type="submit"><i class="fas fa-download"></i> Download</button>
+  </form>
+</body>
+</html>

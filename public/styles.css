@@ -1,0 +1,88 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-group {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .input-group input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .input-group .fas.fa-paste {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cc0000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    .input-group input[type="text"],
+    select,
+    button[type="submit"] {
+      width: 100%;
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+  
